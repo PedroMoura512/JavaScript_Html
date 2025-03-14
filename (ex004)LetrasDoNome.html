@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome (lembre-se de usar letre maiúscula como a primeira do seu nome)') //coletando o nome do usuário
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br/>`) //primeira frase falando o numero de letras no nome do usuario
+        document.write(`Prefere ser chamado de ${nome.toUpperCase()},${nome.toLowerCase()} ou só ${nome} mesmo?`) //mostra o nome em maiusculas e minusculas
+    </script>
+</body>
+</html>

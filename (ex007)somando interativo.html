@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        body{
+            font: normal 18pt Courier;
+        }
+        input{
+            font: normal 18pt Courier;
+            width: 100px;
+        }
+        div#res {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <!-- caixas que coletam numeros com o nome/id "txtn1" -->
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <!-- botao de somar, value representa o nome e onclick é o método click e demos o nome "somar" -->
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+    // assim que somar() for executado, executará os comandos abaixo de function
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            // escrevendo o resultado na tela
+            res.innerHTML = `O resultado de ${n1} + ${n2} = <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>
