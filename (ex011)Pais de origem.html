@@ -24,9 +24,11 @@
 </div>
     <script>
     function verificar(){
+        //coletando informações do usuario
         var txtn = window.document.getElementById('txtnac')
         var res = window.document.getElementById('res')
         var pais = txtn.value
+        //se digitar brasil, brasileiro, se nao, estrangeiro
         if(pais == 'brasil'){
             res.innerHTML = `Olá, por nascer aqui, você é brasileiro!!`
         }else{
