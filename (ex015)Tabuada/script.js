@@ -1,3 +1,4 @@
+/*
 function gerar() {
     let num = document.getElementById('txtnum')
     let tab = document.getElementById('seltabuada')
@@ -15,5 +16,12 @@ function gerar() {
             c++
         }
            
+    }
+}
+*/
+function gerar() {
+    let num = document.getElementById('txtnum')
+    if (num.value.length > 0){
+        window.alert('Por favor digite um número!!')
     }
 }
