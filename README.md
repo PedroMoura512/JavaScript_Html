@@ -1,1 +1,42 @@
-c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\adulto h.png c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\adulto m.png c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\criança h.png c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\criança m.png c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\estilo.css c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\idoso h.png c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\idoso m.png c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\jovem h.png c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\jovem m.png c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\README.md c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\script.js c:\Users\Familia\Documents\MeusProjetos\javascript\JavaScript_Html\site github\Verificador_de_idade.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+    <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div id="ano">
+            <p>
+        Ano que nasceu:
+         <input type="number" name="txtano" id="txtano" min="1" >
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                
+           <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+           <p>
+           Preencha os dados acima para ver o resultado!
+        </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; PedroMoura</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
